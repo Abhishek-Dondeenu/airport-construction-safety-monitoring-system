@@ -1,0 +1,27 @@
+path: ./data/processed 
+
+train: 
+  - baseline_ppe/train/images
+  - airport_custom/train/images
+  - marshalling_custom/train/images
+
+val: 
+  - baseline_ppe/val/images
+  - airport_custom/val/images
+
+names:
+  0: Hardhat
+  1: Gloves
+  2: Safety Vest
+  3: Boots
+  4: Goggles
+  5: None
+  6: Person
+  7: No_Hardhat
+  8: No_Goggle
+  9: No_Gloves
+  10: No_Boots
+  11: Ear-Defenders 
+  12: Marshalling-Wand    
+  13: Marshalling-Vest   
+nc: 14
