@@ -9,6 +9,11 @@ val:
   - baseline_ppe/val/images
   - airport_custom/val/images
 
+test:
+  - baseline_ppe/test/images
+  - airport_custom/test/images
+  - marshalling_custom/test/images
+  
 names:
   0: Hardhat
   1: Gloves
