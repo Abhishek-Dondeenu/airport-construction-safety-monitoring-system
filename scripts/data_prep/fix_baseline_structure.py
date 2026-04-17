@@ -36,7 +36,7 @@ def reorganize_split(split_name):
         except:
             pass
             
-    print(f"✅ {split_name} Done! Structure is now Standard YOLO.")
+    print(f"{split_name} Done! Structure is now Standard YOLO.")
 
 if BASE_DIR.exists():
     reorganize_split("train")
@@ -48,6 +48,6 @@ if BASE_DIR.exists():
     except:
         pass
         
-    print("\n🎉 SUCCESS: baseline_ppe is now fixed!")
+    print("\n SUCCESS: baseline_ppe is now fixed")
 else:
-    print(f"❌ Error: Could not find {BASE_DIR}")
+    print(f" Error: Could not find {BASE_DIR}")

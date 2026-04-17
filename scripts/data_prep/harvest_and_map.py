@@ -66,5 +66,5 @@ for label_file in INPUT_LABELS.glob("*.txt"):
     
     processed_count += 1
 
-print(f"✅ Success! Mapped and merged {files_copied} images.")
-print(f"   Ear-Defenders are now Class 11.")
+print(f"Success! Mapped and merged {files_copied} images.")
+print(f"Ear-Defenders are now Class 11.")

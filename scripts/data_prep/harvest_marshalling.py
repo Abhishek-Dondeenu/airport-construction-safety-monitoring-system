@@ -70,6 +70,6 @@ for label_file in tqdm(label_files):
         else:
             print(f"Warning: Image not found for {label_file.name}")
 
-print(f"\n🎉 SUCCESS!")
+print(f"\n SUCCESS!")
 print(f"Migrated {processed_count} images.")
 print(f"Class IDs remapped correctly (0->11, 1->13, 2->12, 3->2).")
