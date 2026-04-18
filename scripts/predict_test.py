@@ -10,11 +10,11 @@ SOURCE_FOLDER = 'data/raw/temp_marshalling/train/images'
 OUTPUT_FOLDER = 'batch_inference_v1'
 
 def main():
-    print(f"🚀 Loading Model from: {MODEL_PATH}")
+    print(f"Loading Model from: {MODEL_PATH}")
     try:
         model = YOLO(MODEL_PATH)
     except Exception as e:
-        print(f"❌ Error loading model: {e}")
+        print(f"Error loading model: {e}")
         return
 
     print(f"🔍 Scanning folder: {SOURCE_FOLDER}")
@@ -27,7 +27,7 @@ def main():
         image_files.extend(found)
 
     if not image_files:
-        print("⚠️ No images found! Check your SOURCE_FOLDER path.")
+        print("No images found! Check your SOURCE_FOLDER path.")
         return
 
     random.shuffle(image_files)
@@ -50,9 +50,11 @@ def main():
             verbose=False     
         )
 
-    print(f"\n✅ Batch Test Complete!")
-    print(f"📂 Open this folder to see the results:")
+    print(f"\nBatch Test Complete!")
     print(f"   runs/detect/{OUTPUT_FOLDER}")
 
 if __name__ == '__main__':
     main()
+
+# yolo val model=models/detect/Airport_Safety_FYP/final_run_v1/weights/best.pt data=master_data.yaml split=test
+# yolo val model=yolov8m.pt data=master_data.yaml split=test
