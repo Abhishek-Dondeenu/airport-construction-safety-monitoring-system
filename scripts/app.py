@@ -79,7 +79,6 @@ if mode == "Image Inspection":
                 st.image(final_img_rgb, caption=caption_text, use_container_width=True)
 
 elif mode == "CCTV Video Audit":
-    st.info("Upload a video file to test the anonymization pipeline.")
     video_file = st.file_uploader("Upload MP4", type=['mp4'])
     
     if video_file:
