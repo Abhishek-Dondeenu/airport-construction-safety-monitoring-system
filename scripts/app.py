@@ -5,7 +5,6 @@ import cv2
 import numpy as np
 import tempfile
 
-# .\.venv\Scripts\activate
 # streamlit run scripts/app.py
 st.set_page_config(page_title="Airport Safety PPE Detection", layout="wide")
 st.title("✈️ Airport Safety: Privacy & Compliance Layer")
